@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssemblyName>Hodgepodge.Api</AssemblyName>
+    <RootNamespace>Hodgepodge.Api</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.6" />
+    <PackageReference Include="Microsoft.Extensions.Options" Version="2.1.1" />
+    <PackageReference Include="NSwag.AspNetCore" Version="12.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Hodgepodge.Data\Hodgepodge.Data.csproj" />
+    <ProjectReference Include="..\Hodgepodge.Extension\Hodgepodge.Extension.csproj" />
+    <ProjectReference Include="..\Hodgepodge.Service\Hodgepodge.Service.csproj" />
+    <ProjectReference Include="..\Hodgepodge.Utility\Hodgepodge.Utility.csproj" />
+  </ItemGroup>
+
+</Project>
